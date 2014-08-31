@@ -10,6 +10,8 @@
 		6A93C6F719ABDF2E005B12F9 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93C6F619ABDF2E005B12F9 /* Gameplay.m */; };
 		6A93C6FE19ABE115005B12F9 /* Trash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93C6FD19ABE115005B12F9 /* Trash.m */; };
 		6A93C70119AE7616005B12F9 /* CCPhysicsTouchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93C70019AE7616005B12F9 /* CCPhysicsTouchNode.m */; };
+		6A93C70619B17E15005B12F9 /* Pause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93C70519B17E15005B12F9 /* Pause.m */; };
+		6A93C70A19B17E6C005B12F9 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93C70919B17E6C005B12F9 /* GameOver.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -65,6 +67,10 @@
 		6A93C6FD19ABE115005B12F9 /* Trash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Trash.m; path = Source/Trash.m; sourceTree = "<group>"; };
 		6A93C6FF19AE7616005B12F9 /* CCPhysicsTouchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPhysicsTouchNode.h; path = Source/CCPhysicsTouchNode.h; sourceTree = "<group>"; };
 		6A93C70019AE7616005B12F9 /* CCPhysicsTouchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCPhysicsTouchNode.m; path = Source/CCPhysicsTouchNode.m; sourceTree = "<group>"; };
+		6A93C70419B17E15005B12F9 /* Pause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pause.h; path = Source/Pause.h; sourceTree = "<group>"; };
+		6A93C70519B17E15005B12F9 /* Pause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pause.m; path = Source/Pause.m; sourceTree = "<group>"; };
+		6A93C70819B17E6C005B12F9 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOver.h; path = Source/GameOver.h; sourceTree = "<group>"; };
+		6A93C70919B17E6C005B12F9 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOver.m; path = Source/GameOver.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 				6A93C6F619ABDF2E005B12F9 /* Gameplay.m */,
 				6A93C6FC19ABE115005B12F9 /* Trash.h */,
 				6A93C6FD19ABE115005B12F9 /* Trash.m */,
+				6A93C70419B17E15005B12F9 /* Pause.h */,
+				6A93C70519B17E15005B12F9 /* Pause.m */,
+				6A93C70819B17E6C005B12F9 /* GameOver.h */,
+				6A93C70919B17E6C005B12F9 /* GameOver.m */,
 				6A93C6FF19AE7616005B12F9 /* CCPhysicsTouchNode.h */,
 				6A93C70019AE7616005B12F9 /* CCPhysicsTouchNode.m */,
 			);
@@ -358,6 +368,8 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				6A93C6F719ABDF2E005B12F9 /* Gameplay.m in Sources */,
 				6A93C6FE19ABE115005B12F9 /* Trash.m in Sources */,
+				6A93C70A19B17E6C005B12F9 /* GameOver.m in Sources */,
+				6A93C70619B17E15005B12F9 /* Pause.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				6A93C70119AE7616005B12F9 /* CCPhysicsTouchNode.m in Sources */,

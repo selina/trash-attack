@@ -12,4 +12,9 @@
     
 }
 
+-(void)removeTrash {
+    [self removeFromParent];
+}
+
+
 @end
