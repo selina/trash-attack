@@ -96,8 +96,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.30000001192092896</real>
+							<real>0.30000001192092896</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -164,40 +164,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>16.925811767578125</real>
-					<real>7.6953277587890625</real>
+					<real>8.589874267578125</real>
+					<real>3.4687652587890625</real>
 				</array>
 				<array>
-					<real>6.812530517578125</real>
-					<real>80.972686767578125</real>
+					<real>4.074249267578125</real>
+					<real>48.515655517578125</real>
 				</array>
 				<array>
-					<real>52.292999267578125</real>
-					<real>81.625030517578125</real>
+					<real>31.484405517578125</real>
+					<real>48.558624267578125</real>
 				</array>
 				<array>
-					<real>44.070343017578125</real>
-					<real>7.6132965087890625</real>
+					<real>28.050811767578125</real>
+					<real>3.1211090087890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>44.070343017578125</real>
-						<real>7.6132965087890625</real>
+						<real>28.050811767578125</real>
+						<real>3.1211090087890625</real>
 					</array>
 					<array>
-						<real>52.292999267578125</real>
-						<real>81.625030517578125</real>
+						<real>31.484405517578125</real>
+						<real>48.558624267578125</real>
 					</array>
 					<array>
-						<real>6.812530517578125</real>
-						<real>80.972686767578125</real>
+						<real>4.074249267578125</real>
+						<real>48.515655517578125</real>
 					</array>
 					<array>
-						<real>16.925811767578125</real>
-						<real>7.6953277587890625</real>
+						<real>8.589874267578125</real>
+						<real>3.4687652587890625</real>
 					</array>
 				</array>
 			</array>
@@ -233,8 +233,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>58</real>
-					<real>88</real>
+					<real>34</real>
+					<real>51</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

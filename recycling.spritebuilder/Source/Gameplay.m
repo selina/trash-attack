@@ -34,10 +34,10 @@
     [self generateTrash];
 }
 
-//- (void)update:(CCTime)delta {
-//    [self generateNewTrash:delta];
-//    
-//}
+- (void)update:(CCTime)delta {
+    [self generateNewTrash:delta];
+    
+}
 
 -(void)generateTrash {
     //int randomint = arc4random_uniform(trashTypeArrayLength);
@@ -66,19 +66,19 @@
 }
 
 
-//-(void)generateNewTrash:(CCTime)delta {
-//    //after random amount of time less than three seconds: generate new cup
-//    
-//    srandom(time(NULL));
-//    
-//    timeSinceTrash += delta;
-//    
-//    if (timeSinceTrash > randomTimeUntilNextCup) {
-//        [self generateTrash];
-//        timeSinceTrash = 0;
-//        randomTimeUntilNextCup = clampf((CCRANDOM_0_1() * 3),0.5,3);
-//    }
-//}
+-(void)generateNewTrash:(CCTime)delta {
+    //after random amount of time less than three seconds: generate new cup
+    
+    srandom(time(NULL));
+    
+    timeSinceTrash += delta;
+    
+    if (timeSinceTrash > randomTimeUntilNextCup) {
+        [self generateTrash];
+        timeSinceTrash = 0;
+        randomTimeUntilNextCup = clampf((CCRANDOM_0_1() * 4),1,4);
+    }
+}
 
 
 
