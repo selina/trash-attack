@@ -19,6 +19,7 @@
     NSInteger trashTypeArrayLength;
     float timeSinceTrash;
     float randomTimeUntilNextCup;
+    CCNode *_paperbin;
 }
 
 
@@ -27,11 +28,11 @@
     //TODO: define what trash array is
     _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", nil];
     trashTypeArrayLength = [_trashTypeArray count];
-    randomTimeUntilNextCup = .2;
-    timeSinceTrash = 0;
+    //randomTimeUntilNextCup = .2;
+    //timeSinceTrash = 0;
     _physicsNode.debugDraw = true;
-    _physicsNode.collisionDelegate = self; 
-    [self generateTrash];
+    _physicsNode.collisionDelegate = self;
+    _paperbin.physicsBody.collisionType = @"trashcan";
 }
 
 - (void)update:(CCTime)delta {
@@ -56,6 +57,7 @@
     trashinstance.position = trashLocation;
     
     [_physicsNode addChild:trashinstance];
+    trashinstance.physicsBody.collisionType = @"trashitem";
     
 //    int randomvelocity = arc4random_uniform(40);
 //    int negativevelocity = -1 * randomvelocity;
@@ -84,7 +86,9 @@
 
 #pragma mark collisions
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashcan:(CCNode *)nodeA trashitem:(CCNode *)nodeB {
+-(BOOL) ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashcan:(CCNode *)nodeA trashitem:(Trash *)nodeB {
+    //remove trashitem
+    [nodeB removeTrash];
     //add points
     return NO;
 }
