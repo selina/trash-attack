@@ -10,6 +10,7 @@
 
 @interface Trash : CCNode
 
+@property (nonatomic, strong) NSString *trashName;
 -(void)removeTrash; 
 
 @end

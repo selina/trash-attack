@@ -41,9 +41,10 @@
 }
 
 -(void)generateTrash {
-    //int randomint = arc4random_uniform(trashTypeArrayLength);
-    //Trash *trashinstance = (Trash*)[CCBReader load:[_trashTypeArray objectAtIndex:randomint]];
-    Trash *trashinstance = (Trash*)[CCBReader load:@"CoffeeCup"];
+    int randomint = arc4random_uniform(trashTypeArrayLength);
+    Trash *trashinstance = (Trash*)[CCBReader load:[_trashTypeArray objectAtIndex:randomint]];
+    //Trash *trashinstance = (Trash*)[CCBReader load:@"CoffeeCup"];
+    trashinstance.trashName = [_trashTypeArray objectAtIndex:randomint];
 
     srandom(time(NULL));
     
