@@ -35,6 +35,14 @@
     _paperbin.physicsBody.collisionType = @"trashcan";
 }
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        self.wrongThingList = [[NSMutableArray alloc] init];
+    }
+    return self; 
+}
+
 - (void)update:(CCTime)delta {
     [self generateNewTrash:delta];
     
@@ -45,6 +53,7 @@
     Trash *trashinstance = (Trash*)[CCBReader load:[_trashTypeArray objectAtIndex:randomint]];
     //Trash *trashinstance = (Trash*)[CCBReader load:@"CoffeeCup"];
     trashinstance.trashName = [_trashTypeArray objectAtIndex:randomint];
+    trashinstance.gameplayLayer = self; 
 
     srandom(time(NULL));
     

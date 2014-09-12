@@ -10,4 +10,7 @@
 
 @interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
 
+@property (nonatomic, strong) NSMutableArray *wrongThingList;
+
+
 @end

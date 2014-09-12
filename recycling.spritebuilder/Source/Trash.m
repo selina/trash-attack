@@ -16,6 +16,9 @@
     //[self removeFromParent];
     self.visible=NO;
     self.physicsBody.collisionMask=@[];
+    if (![self.gameplayLayer.wrongThingList containsObject:self.trashName]) {
+        [self.gameplayLayer.wrongThingList addObject:self.trashName];
+    }
 
 }
 

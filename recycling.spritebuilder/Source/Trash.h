@@ -7,10 +7,14 @@
 //
 
 #import "CCNode.h"
+#import "Gameplay.h"
 
 @interface Trash : CCNode
 
 @property (nonatomic, strong) NSString *trashName;
+@property (nonatomic, weak) Gameplay *gameplayLayer;
+
+
 -(void)removeTrash; 
 
 @end
