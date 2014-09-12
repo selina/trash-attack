@@ -33,14 +33,7 @@
     _physicsNode.debugDraw = true;
     _physicsNode.collisionDelegate = self;
     _paperbin.physicsBody.collisionType = @"trashcan";
-}
-
--(id)init {
-    self = [super init];
-    if (self) {
-        self.wrongThingList = [[NSMutableArray alloc] init];
-    }
-    return self; 
+    self.wrongThingList = [NSMutableArray arrayWithObjects: nil];;
 }
 
 - (void)update:(CCTime)delta {
