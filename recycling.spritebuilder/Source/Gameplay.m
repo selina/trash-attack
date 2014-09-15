@@ -41,7 +41,7 @@
     trashTypeArrayLength = [_trashTypeArray count];
     //randomTimeUntilNextCup = .2;
     //timeSinceTrash = 0;
-    _physicsNode.debugDraw = true;
+    //_physicsNode.debugDraw = true;
     _physicsNode.collisionDelegate = self;
     
     _paperbin.physicsBody.collisionType = @"paperbin";
@@ -215,7 +215,9 @@
 
 //switch around the trash cans
 
+//cups fall faster
 
+//cups fall more often
 
 # pragma mark pause
 
