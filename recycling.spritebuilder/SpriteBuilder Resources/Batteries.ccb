@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,7 +41,7 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>3</integer>
+				<integer>1</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CoffeeCup</string>
+				<string>bigger-battery-md</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -85,8 +85,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.5</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -96,8 +96,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.30000001192092896</real>
-							<real>0.30000001192092896</real>
+							<real>0.60000002384185791</real>
+							<real>0.60000002384185791</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/CoffeeCup.png</string>
+							<string>ccbResources/bigger-battery-md.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -150,7 +150,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string>paper</string>
+			<string>other</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -164,40 +164,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>8.589874267578125</real>
-					<real>3.4687652587890625</real>
+					<real>-2.4274556636810303</real>
+					<real>-24.933523178100586</real>
 				</array>
 				<array>
-					<real>4.074249267578125</real>
-					<real>48.515655517578125</real>
+					<real>-18.243215560913086</real>
+					<real>17.825422286987305</real>
 				</array>
 				<array>
-					<real>31.484405517578125</real>
-					<real>48.558624267578125</real>
+					<real>4.8421549797058105</real>
+					<real>24.892539978027344</real>
 				</array>
 				<array>
-					<real>28.050811767578125</real>
-					<real>3.1211090087890625</real>
+					<real>20.375947952270508</real>
+					<real>-17.007699966430664</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>28.050811767578125</real>
-						<real>3.1211090087890625</real>
+						<real>20.375947952270508</real>
+						<real>-17.007699966430664</real>
 					</array>
 					<array>
-						<real>31.484405517578125</real>
-						<real>48.558624267578125</real>
+						<real>4.8421549797058105</real>
+						<real>24.892539978027344</real>
 					</array>
 					<array>
-						<real>4.074249267578125</real>
-						<real>48.515655517578125</real>
+						<real>-18.243215560913086</real>
+						<real>17.825422286987305</real>
 					</array>
 					<array>
-						<real>8.589874267578125</real>
-						<real>3.4687652587890625</real>
+						<real>-2.4274556636810303</real>
+						<real>-24.933523178100586</real>
 					</array>
 				</array>
 			</array>
@@ -233,8 +233,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>34</real>
-					<real>51</real>
+					<real>0.0</real>
+					<real>0.0</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

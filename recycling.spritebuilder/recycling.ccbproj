@@ -85,6 +85,8 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>ccbResources/black.png</key>
+		<dict/>
 		<key>ccbResources/ccbButtonHighlighted.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -164,8 +166,8 @@
 		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>Version: 1.2.0
-GitHub: 603331c974
+	<string>Version: 1.2.1
+GitHub: dde98b0763
 </string>
 </dict>
 </plist>

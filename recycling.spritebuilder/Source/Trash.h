@@ -15,6 +15,7 @@
 @property (nonatomic, weak) Gameplay *gameplayLayer;
 
 
--(void)removeTrash; 
+-(void)removeTrash;
+-(void)removeWrongTrash;
 
 @end

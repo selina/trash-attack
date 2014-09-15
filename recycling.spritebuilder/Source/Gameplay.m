@@ -20,20 +20,29 @@
     float timeSinceTrash;
     float randomTimeUntilNextCup;
     CCNode *_paperbin;
+    CCNode *_otherbin;
+    CCNode *_plasticbin;
+    CCNode *_trashbin;
 }
 
 
 -(void)didLoadFromCCB {
     self.userInteractionEnabled = true;
     //TODO: define what trash array is
-    _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", nil];
+    _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", @"Batteries", nil];
     trashTypeArrayLength = [_trashTypeArray count];
     //randomTimeUntilNextCup = .2;
     //timeSinceTrash = 0;
     _physicsNode.debugDraw = true;
     _physicsNode.collisionDelegate = self;
-    _paperbin.physicsBody.collisionType = @"trashcan";
-    self.wrongThingList = [NSMutableArray arrayWithObjects: nil];;
+    
+    _paperbin.physicsBody.collisionType = @"paperbin";
+    _otherbin.physicsBody.collisionType = @"otherbin";
+    _plasticbin.physicsBody.collisionType = @"plasticbin";
+    _trashbin.physicsBody.collisionType = @"trashbin";
+    
+    self.wrongThingList = [NSMutableArray arrayWithObjects: nil];
+    _score = 0;
 }
 
 - (void)update:(CCTime)delta {
@@ -43,9 +52,10 @@
 
 -(void)generateTrash {
     int randomint = arc4random_uniform(trashTypeArrayLength);
-    Trash *trashinstance = (Trash*)[CCBReader load:[_trashTypeArray objectAtIndex:randomint]];
+    NSString *randomitem =[_trashTypeArray objectAtIndex:randomint];
+    Trash *trashinstance = (Trash*)[CCBReader load:randomitem];
     //Trash *trashinstance = (Trash*)[CCBReader load:@"CoffeeCup"];
-    trashinstance.trashName = [_trashTypeArray objectAtIndex:randomint];
+    //trashinstance.trashName = randomitem;
     trashinstance.gameplayLayer = self; 
 
     srandom(time(NULL));
@@ -60,7 +70,7 @@
     trashinstance.position = trashLocation;
     
     [_physicsNode addChild:trashinstance];
-    trashinstance.physicsBody.collisionType = @"trashitem";
+    //trashinstance.physicsBody.collisionType = @"trashitem";
     
 //    int randomvelocity = arc4random_uniform(40);
 //    int negativevelocity = -1 * randomvelocity;
@@ -89,13 +99,25 @@
 
 #pragma mark collisions
 
--(BOOL) ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashcan:(CCNode *)nodeA trashitem:(Trash *)nodeB {
-    //remove trashitem
+-(BOOL) ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair paperbin:(CCNode *)nodeA paper:(Trash *)nodeB {
     [nodeB removeTrash];
-    //add points
     return NO;
 }
 
+-(BOOL) ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair plasticbin:(CCNode *)nodeA plastic:(Trash*)nodeB {
+    [nodeB removeTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashbin:(CCNode *)nodeA trash:(Trash *)nodeB {
+    [nodeB removeTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair otherbin:(CCNode *)nodeA other:(Trash *)nodeB {
+    [nodeB removeTrash];
+    return NO;
+}
 
 //start switching around the trash cans after a while
 

@@ -13,6 +13,11 @@
 }
 
 -(void)removeTrash {
+    self.visible=NO;
+    self.physicsBody.collisionMask=@[];
+}
+
+-(void)removeWrongTrash {
     //[self removeFromParent];
     self.visible=NO;
     self.physicsBody.collisionMask=@[];
