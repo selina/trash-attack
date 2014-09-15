@@ -7,7 +7,11 @@
 //
 
 #import "CCNode.h"
+#import "Gameplay.h"
 
 @interface GameOver : CCNode
+
+@property (nonatomic, weak) Gameplay *gameplayLayer;
+
 
 @end

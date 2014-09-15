@@ -9,6 +9,7 @@
 #import "Gameplay.h"
 #import "Trash.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
+#import "GameOver.h"
 
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -26,6 +27,10 @@
     
     int livesLeft;
     CCLabelTTF *_scoreLabel;
+    
+    CCNode *_heart3;
+    CCNode *_heart2;
+    CCNode *_heart1;
 }
 
 
@@ -106,6 +111,15 @@
 
 -(void)loseALife {
     livesLeft -= 1;
+    if (livesLeft == 2) {
+        _heart3.visible = NO;
+    }
+    else if (livesLeft == 1) {
+        _heart2.visible = NO;
+    }
+    else {
+        [self gameOver];
+    }
 }
 
 
@@ -133,6 +147,69 @@
 
 #pragma mark wrong collisions
 
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair otherbin:(CCNode *)nodeA paper:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair otherbin:(CCNode *)nodeA plastic:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair otherbin:(CCNode *)nodeA trash:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashbin:(CCNode *)nodeA other:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashbin:(CCNode *)nodeA paper:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair trashbin:(CCNode *)nodeA plastic:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair plasticbin:(CCNode *)nodeA other:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair plasticbin:(CCNode *)nodeA trash:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair plasticbin:(CCNode *)nodeA paper:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair paperbin:(CCNode *)nodeA plastic:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair paperbin:(CCNode *)nodeA trash:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair paperbin:(CCNode *)nodeA other:(Trash *)nodeB {
+    [nodeB removeWrongTrash];
+    return NO;
+}
+
+
+
+
 //start switching around the trash cans after a while
 
 
@@ -147,6 +224,15 @@
     [[CCDirector sharedDirector] pushScene:pauseScene];
 }
 
+-(void)gameOver {
+//    GameOver *gameover = (GameOver*)[CCBReader load:@"GameOver"];
+//    gameover.gameplayLayer = self;
+//    [[CCDirector sharedDirector] replaceScene:gameover];
+
+    CCScene *scene = [CCBReader loadAsScene:@"GameOver"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+    
+}
 
 
 @end

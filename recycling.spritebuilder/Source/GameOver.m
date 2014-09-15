@@ -8,6 +8,18 @@
 
 #import "GameOver.h"
 
-@implementation GameOver
+@implementation GameOver {
+    
+}
+
+-(void)playAgain {
+    CCScene *mainScene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:mainScene];
+}
+
+-(void)quit {
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:mainScene];
+}
 
 @end
