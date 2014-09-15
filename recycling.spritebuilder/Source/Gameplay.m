@@ -23,6 +23,9 @@
     CCNode *_otherbin;
     CCNode *_plasticbin;
     CCNode *_trashbin;
+    
+    int livesLeft;
+    CCLabelTTF *_scoreLabel;
 }
 
 
@@ -43,6 +46,7 @@
     
     self.wrongThingList = [NSMutableArray arrayWithObjects: nil];
     _score = 0;
+    livesLeft = 3;
 }
 
 - (void)update:(CCTime)delta {
@@ -95,6 +99,10 @@
     }
 }
 
+-(void)changeScoreLabel {
+    NSString *scoreString = [NSString stringWithFormat:@"%d", _score];
+    _scoreLabel.string = scoreString;
+}
 
 
 #pragma mark collisions

@@ -13,5 +13,6 @@
 @property (nonatomic, strong) NSMutableArray *wrongThingList;
 @property (nonatomic, assign) int score; 
 
+-(void)changeScoreLabel;
 
 @end
