@@ -14,5 +14,5 @@
 @property (nonatomic, assign) int score; 
 
 -(void)changeScoreLabel;
-
+-(void)loseALife;
 @end

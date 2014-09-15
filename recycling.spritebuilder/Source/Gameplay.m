@@ -32,7 +32,7 @@
 -(void)didLoadFromCCB {
     self.userInteractionEnabled = true;
     //TODO: define what trash array is
-    _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", @"Batteries", nil];
+    _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", @"Batteries", @"HalfEatenApple", @"Napkin", @"Book", @"Cassette", @"Envelope", @"GlassBottle", @"iPod", @"Lightbulb", @"Newspaper", @"PlasticCup", @"SodaCan", @"Umbrella", @"BrownBag", nil];
     trashTypeArrayLength = [_trashTypeArray count];
     //randomTimeUntilNextCup = .2;
     //timeSinceTrash = 0;
@@ -59,7 +59,7 @@
     NSString *randomitem =[_trashTypeArray objectAtIndex:randomint];
     Trash *trashinstance = (Trash*)[CCBReader load:randomitem];
     //Trash *trashinstance = (Trash*)[CCBReader load:@"CoffeeCup"];
-    //trashinstance.trashName = randomitem;
+    trashinstance.trashName = randomitem;
     trashinstance.gameplayLayer = self; 
 
     srandom(time(NULL));
@@ -104,8 +104,12 @@
     _scoreLabel.string = scoreString;
 }
 
+-(void)loseALife {
+    livesLeft -= 1;
+}
 
-#pragma mark collisions
+
+#pragma mark right collisions
 
 -(BOOL) ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair paperbin:(CCNode *)nodeA paper:(Trash *)nodeB {
     [nodeB removeTrash];
@@ -126,6 +130,8 @@
     [nodeB removeTrash];
     return NO;
 }
+
+#pragma mark wrong collisions
 
 //start switching around the trash cans after a while
 

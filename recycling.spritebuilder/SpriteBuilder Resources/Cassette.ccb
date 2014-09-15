@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>recycle-bin-md</string>
+				<string>cassette</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -96,9 +96,9 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
+							<real>0.30000001192092896</real>
+							<real>0.30000001192092896</real>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/recycle-bin-md.png</string>
+							<string>ccbResources/cassette.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -130,13 +130,78 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Trash</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
 		<string></string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
+		<key>physicsBody</key>
+		<dict>
+			<key>affectedByGravity</key>
+			<true/>
+			<key>allowsRotation</key>
+			<true/>
+			<key>bodyShape</key>
+			<integer>0</integer>
+			<key>collisionCategories</key>
+			<array/>
+			<key>collisionMask</key>
+			<array/>
+			<key>collisionType</key>
+			<string>other</string>
+			<key>cornerRadius</key>
+			<real>0.0</real>
+			<key>density</key>
+			<real>1</real>
+			<key>dynamic</key>
+			<true/>
+			<key>elasticity</key>
+			<real>0.30000001192092896</real>
+			<key>friction</key>
+			<real>0.30000001192092896</real>
+			<key>points</key>
+			<array>
+				<array>
+					<real>-22.499969482421875</real>
+					<real>-14.941390991210938</real>
+				</array>
+				<array>
+					<real>-21.410125732421875</real>
+					<real>16.027359008789062</real>
+				</array>
+				<array>
+					<real>25.113311767578125</real>
+					<real>16.679702758789062</real>
+				</array>
+				<array>
+					<real>24.671905517578125</real>
+					<real>-14.246078491210938</real>
+				</array>
+			</array>
+			<key>polygons</key>
+			<array>
+				<array>
+					<array>
+						<real>24.671905517578125</real>
+						<real>-14.246078491210938</real>
+					</array>
+					<array>
+						<real>25.113311767578125</real>
+						<real>16.679702758789062</real>
+					</array>
+					<array>
+						<real>-21.410125732421875</real>
+						<real>16.027359008789062</real>
+					</array>
+					<array>
+						<real>-22.499969482421875</real>
+						<real>-14.941390991210938</real>
+					</array>
+				</array>
+			</array>
+		</dict>
 		<key>properties</key>
 		<array>
 			<dict>

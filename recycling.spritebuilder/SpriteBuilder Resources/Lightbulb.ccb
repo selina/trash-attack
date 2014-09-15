@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>bigger-battery-md</string>
+				<string>lightbulb</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -96,8 +96,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.40000000596046448</real>
-							<real>0.40000000596046448</real>
+							<real>0.30000001192092896</real>
+							<real>0.30000001192092896</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/bigger-battery-md.png</string>
+							<string>ccbResources/lightbulb.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -164,40 +164,48 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-1.5898134708404541</real>
-					<real>-16.757614135742188</real>
+					<real>-5.3387341499328613</real>
+					<real>-16.064632415771484</real>
 				</array>
 				<array>
-					<real>-11.599323272705078</real>
-					<real>11.072418212890625</real>
+					<real>-8.8891763687133789</real>
+					<real>11.03593921661377</real>
 				</array>
 				<array>
-					<real>2.3811039924621582</real>
-					<real>16.699481964111328</real>
+					<real>-0.39375653862953186</real>
+					<real>15.736289978027344</real>
 				</array>
 				<array>
-					<real>12.926610946655273</real>
-					<real>-10.635441780090332</real>
+					<real>9.8467950820922852</real>
+					<real>13.130365371704102</real>
+				</array>
+				<array>
+					<real>5.7913904190063477</real>
+					<real>-15.962592124938965</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>12.926610946655273</real>
-						<real>-10.635441780090332</real>
+						<real>5.7913904190063477</real>
+						<real>-15.962592124938965</real>
 					</array>
 					<array>
-						<real>2.3811039924621582</real>
-						<real>16.699481964111328</real>
+						<real>9.8467950820922852</real>
+						<real>13.130365371704102</real>
 					</array>
 					<array>
-						<real>-11.599323272705078</real>
-						<real>11.072418212890625</real>
+						<real>-0.39375653862953186</real>
+						<real>15.736289978027344</real>
 					</array>
 					<array>
-						<real>-1.5898134708404541</real>
-						<real>-16.757614135742188</real>
+						<real>-8.8891763687133789</real>
+						<real>11.03593921661377</real>
+					</array>
+					<array>
+						<real>-5.3387341499328613</real>
+						<real>-16.064632415771484</real>
 					</array>
 				</array>
 			</array>

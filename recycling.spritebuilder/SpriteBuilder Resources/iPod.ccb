@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>bigger-battery-md</string>
+				<string>ipod</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/bigger-battery-md.png</string>
+							<string>ccbResources/ipod.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -164,40 +164,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-1.5898134708404541</real>
-					<real>-16.757614135742188</real>
+					<real>-11.700163841247559</real>
+					<real>-27.151407241821289</real>
 				</array>
 				<array>
-					<real>-11.599323272705078</real>
-					<real>11.072418212890625</real>
+					<real>-11.981788635253906</real>
+					<real>27.307672500610352</real>
 				</array>
 				<array>
-					<real>2.3811039924621582</real>
-					<real>16.699481964111328</real>
+					<real>12.443305015563965</real>
+					<real>27.388526916503906</real>
 				</array>
 				<array>
-					<real>12.926610946655273</real>
-					<real>-10.635441780090332</real>
+					<real>12.382437705993652</real>
+					<real>-27.383975982666016</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>12.926610946655273</real>
-						<real>-10.635441780090332</real>
+						<real>12.382437705993652</real>
+						<real>-27.383975982666016</real>
 					</array>
 					<array>
-						<real>2.3811039924621582</real>
-						<real>16.699481964111328</real>
+						<real>12.443305015563965</real>
+						<real>27.388526916503906</real>
 					</array>
 					<array>
-						<real>-11.599323272705078</real>
-						<real>11.072418212890625</real>
+						<real>-11.981788635253906</real>
+						<real>27.307672500610352</real>
 					</array>
 					<array>
-						<real>-1.5898134708404541</real>
-						<real>-16.757614135742188</real>
+						<real>-11.700163841247559</real>
+						<real>-27.151407241821289</real>
 					</array>
 				</array>
 			</array>
