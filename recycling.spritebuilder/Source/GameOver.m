@@ -9,6 +9,13 @@
 #import "GameOver.h"
 
 @implementation GameOver {
+    CCLabelTTF *_lastScore;
+    CCLabelTTF *_bestScore;
+}
+
+-(void)onEnter{
+    [super onEnter];
+    [self setScoreLabels];
     
 }
 
@@ -20,6 +27,19 @@
 -(void)quit {
     CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:mainScene];
+}
+
+-(void)setScoreLabels {
+    int lastScore = self.gameplayLayer.score;
+    _lastScore.string = [NSString stringWithFormat:@"%i", lastScore];
+    
+    int highScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"High Score"];
+    if (lastScore > highScore) {
+        highScore = lastScore;
+        [[NSUserDefaults standardUserDefaults] setInteger:highScore forKey:@"High Score"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    _bestScore.string = [NSString stringWithFormat:@"%i", highScore];
 }
 
 @end

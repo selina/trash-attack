@@ -225,13 +225,12 @@
 }
 
 -(void)gameOver {
-//    GameOver *gameover = (GameOver*)[CCBReader load:@"GameOver"];
-//    gameover.gameplayLayer = self;
-//    [[CCDirector sharedDirector] replaceScene:gameover];
+    GameOver *gameover = (GameOver*)[CCBReader load:@"GameOver"];
+    gameover.gameplayLayer = self;
+    CCScene *gameoverScene = [CCScene node];
+    [gameoverScene addChild:gameover];
+    [[CCDirector sharedDirector] replaceScene:gameoverScene];
 
-    CCScene *scene = [CCBReader loadAsScene:@"GameOver"];
-    [[CCDirector sharedDirector] replaceScene:scene];
-    
 }
 
 
