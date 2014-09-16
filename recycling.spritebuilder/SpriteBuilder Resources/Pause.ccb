@@ -186,8 +186,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.4023832380771637</real>
-							<real>0.58612906932830811</real>
+							<real>0.40000000596046448</real>
+							<real>0.60000002384185791</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -393,11 +393,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>177.35415649414062</real>
-							<real>200.70037841796875</real>
+							<real>0.55000001192092896</real>
+							<real>0.34999999403953552</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -686,6 +686,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

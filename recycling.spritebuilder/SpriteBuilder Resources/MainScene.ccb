@@ -250,8 +250,6 @@
 						<real>0.5</real>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -286,7 +284,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.30000001192092896</real>
+							<real>0.34999999403953552</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -310,9 +308,9 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>3</real>
-							<real>2.5</real>
-							<false/>
+							<real>1.5</real>
+							<real>1.5</real>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -334,8 +332,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>40</real>
-							<real>40</real>
+							<real>63</real>
+							<real>68</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -368,7 +366,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Play</string>
+							<string></string>
 							<false/>
 						</array>
 					</dict>
@@ -380,7 +378,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>ccbResources/play.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -391,7 +389,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>ccbResources/play.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -415,7 +413,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>ccbResources/play.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -434,7 +432,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>ccbResources/play.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -611,11 +609,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>114.38084411621094</real>
-							<real>439.52001953125</real>
+							<real>0.34999999403953552</real>
+							<real>0.75</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -818,11 +816,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>201.4720458984375</real>
-							<real>339.98724365234375</real>
+							<real>0.60000002384185791</real>
+							<real>0.60000002384185791</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>

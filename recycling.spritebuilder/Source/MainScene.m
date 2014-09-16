@@ -36,7 +36,7 @@
     float contentNodeWidth = _contentNode.contentSize.width;
     
     float x = clampf(CCRANDOM_0_1() * contentNodeWidth, contentNodeWidth*0.1, contentNodeWidth*0.8);
-    float y = _contentNode.contentSize.height;
+    float y = _contentNode.contentSize.height * 1.1;
     CGPoint trashLocation = ccp(x, y);
     
     trashinstance.positionType = CCPositionTypeNormalized;
@@ -45,6 +45,7 @@
     [_physicsNode addChild:trashinstance];
     
     trashinstance.physicsBody.velocity = ccp(0, -40);
+    trashinstance.physicsBody.density = 10.00;
     
 }
 

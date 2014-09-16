@@ -31,6 +31,8 @@
     CCNode *_heart3;
     CCNode *_heart2;
     CCNode *_heart1;
+    
+    int velocityThreshold;
 }
 
 
@@ -52,6 +54,9 @@
     self.wrongThingList = [NSMutableArray arrayWithObjects: nil];
     _score = 0;
     livesLeft = 3;
+    velocityThreshold = 20;
+    
+    [self schedule:@selector(trashFallsFaster) interval:10];
 }
 
 - (void)update:(CCTime)delta {
@@ -85,8 +90,14 @@
 //    int negativevelocity = -1 * randomvelocity;
 //    
     
-    trashinstance.physicsBody.velocity = ccp(0, -40);
+    int randomvelocity = arc4random_uniform(40) + velocityThreshold;
+    int negativevelocity = -1 * randomvelocity;
+    trashinstance.physicsBody.velocity = ccp(0, negativevelocity);
 
+}
+
+-(void)trashFallsFaster {
+    velocityThreshold += 10;
 }
 
 

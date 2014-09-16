@@ -29,6 +29,12 @@
     [[CCDirector sharedDirector] replaceScene:mainScene];
 }
 
+-(void)backtomenu {
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:mainScene];
+}
+
+
 -(void)setScoreLabels {
     int lastScore = self.gameplayLayer.score;
     _lastScore.string = [NSString stringWithFormat:@"%i", lastScore];
