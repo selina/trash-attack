@@ -85,6 +85,11 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>ccbResources/arrow_left.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
 		<key>ccbResources/black.png</key>
 		<dict/>
 		<key>ccbResources/ccbButtonHighlighted.png</key>
@@ -169,6 +174,11 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 			<key>tabletScale</key>
+			<integer>1</integer>
+		</dict>
+		<key>ccbResources/play.png</key>
+		<dict>
+			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
 	</dict>

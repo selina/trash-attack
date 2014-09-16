@@ -38,7 +38,7 @@
 
 -(void)didLoadFromCCB {
     self.userInteractionEnabled = true;
-    //TODO: define what trash array is
+    
     _trashTypeArray = [NSMutableArray arrayWithObjects:@"CoffeeCup", @"Batteries", @"HalfEatenApple", @"Napkin", @"Book", @"Cassette", @"Envelope", @"GlassBottle", @"iPod", @"Lightbulb", @"Newspaper", @"PlasticCup", @"SodaCan", @"Umbrella", @"BrownBag", nil];
     trashTypeArrayLength = [_trashTypeArray count];
     //randomTimeUntilNextCup = .2;
@@ -58,6 +58,8 @@
     
     [self schedule:@selector(trashFallsFaster) interval:10];
 }
+
+#pragma mark gameplay stuff
 
 - (void)update:(CCTime)delta {
     [self generateNewTrash:delta];
@@ -93,6 +95,7 @@
     int randomvelocity = arc4random_uniform(40) + velocityThreshold;
     int negativevelocity = -1 * randomvelocity;
     trashinstance.physicsBody.velocity = ccp(0, negativevelocity);
+    trashinstance.physicsBody.density = 10.00;
 
 }
 
@@ -226,7 +229,6 @@
 
 //switch around the trash cans
 
-//cups fall faster
 
 //cups fall more often
 
