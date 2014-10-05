@@ -49,7 +49,10 @@
     
 }
 
-
+- (void)about {
+    CCScene *aboutScene = [CCBReader loadAsScene:@"About"];
+    [[CCDirector sharedDirector] pushScene:aboutScene];
+}
 
 -(void)play {
     CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
